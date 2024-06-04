@@ -13,7 +13,7 @@ const UserInfo = () => {
 
     useEffect(()=>{setCurrentUser({imie: "Mateusz", nazwisko: "Borkowski"})},[])
 
-    return <p>User: ${currentUser.imie} ${currentUser.nazwisko}</p>
+    return <p>User: {currentUser.imie} {currentUser.nazwisko}</p>
 }
 
 export default UserInfo

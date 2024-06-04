@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import ClockTime from "./ClockTime/ClockTime";
+import ClockDate from "./ClockDate/ClockDate";
 
 export type clockType = {
     hereDate: Date
@@ -19,7 +21,8 @@ const Clock = () => {
     },[currentDate])
 
     return <div>
-
+        <ClockTime hereDate={currentDate} />
+        <ClockDate hereDate={currentDate} />
     </div>
 }
 
